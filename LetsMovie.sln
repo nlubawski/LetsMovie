@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMovie.Presentation", "LetsMovie.Presentation\LetsMovie.Presentation.csproj", "{46E69B18-5D6C-4A99-8509-F29AD902829F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMovie.Presentation", "LetsMovie.Presentation\LetsMovie.Presentation.csproj", "{46E69B18-5D6C-4A99-8509-F29AD902829F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMovie.Domain", "LetsMovie.Domain\LetsMovie.Domain.csproj", "{D96A4D2A-676E-4F6E-9659-AC26CAE468F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMovie.Domain", "LetsMovie.Domain\LetsMovie.Domain.csproj", "{D96A4D2A-676E-4F6E-9659-AC26CAE468F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMovie.Service", "LetsMovie.Service\LetsMovie.Service.csproj", "{E06B1886-13E8-4F79-88C3-37EFB2F04A4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMovie.Service", "LetsMovie.Service\LetsMovie.Service.csproj", "{E06B1886-13E8-4F79-88C3-37EFB2F04A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMovie.Infra", "LetsMovie.Infra\LetsMovie.Infra.csproj", "{D330C536-532C-438A-9D74-A09AC606D3E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E06B1886-13E8-4F79-88C3-37EFB2F04A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E06B1886-13E8-4F79-88C3-37EFB2F04A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E06B1886-13E8-4F79-88C3-37EFB2F04A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D330C536-532C-438A-9D74-A09AC606D3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D330C536-532C-438A-9D74-A09AC606D3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D330C536-532C-438A-9D74-A09AC606D3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D330C536-532C-438A-9D74-A09AC606D3E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
