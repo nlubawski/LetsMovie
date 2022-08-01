@@ -83,6 +83,8 @@ INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES ('O Exorcista','Horror',
 INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES ('Indiana Jones: O reino da caveira de cristal','Adventure','2008-05-21')
 INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES ('O auto  da compadecida','Comedy','2000-09-10')
 INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES ('A verdade nua e crua','Romantic Comedy','2009-09-18')
+INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES ('Kill Bill - Volume 1', 'Action', '2004-04-23')
+INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES ('Kill Bill - Volume 2', 'Action', '2004-10-08')
 
 	  	   	   
 -- Principal Actor
@@ -95,6 +97,10 @@ INSERT INTO PrincipalActor(Name) VALUES ('Natalie Portman')
 INSERT INTO PrincipalActor(Name) VALUES ('Harisson Ford')
 INSERT INTO PrincipalActor(Name) VALUES ('Linda Blair')
 INSERT INTO PrincipalActor(Name) VALUES ('Katherine Heigl')
+INSERT INTO PrincipalActor(Name) VALUES ('Uma Thurman')
+INSERT INTO PrincipalActor(Name) VALUES ('David Carradine')
+
+
 
 -- Act
 
@@ -106,6 +112,9 @@ INSERT INTO Act(Role) VALUES ('Indiana Jones')
 INSERT INTO Act(Role) VALUES ('Regan MacNeil')
 INSERT INTO Act(Role) VALUES ('João Grilo')
 INSERT INTO Act(Role) VALUES ('Evey Rammond')
+INSERT INTO Act(Role) VALUES ('Beatrix Kiddo')
+INSERT INTO Act(Role) VALUES('Bill')
+
 
 
 ------ UPDATE ACT --------
@@ -119,7 +128,6 @@ SET ID_Movie = 3
 WHERE Role = 'Evey Rammond'
 
 
-
 UPDATE Act
 SET ID_Actor = 3
 WHERE Role = 'João Grilo'
@@ -127,7 +135,6 @@ WHERE Role = 'João Grilo'
 UPDATE Act
 SET ID_Movie = 7
 WHERE Role = 'João Grilo'
-
 
 
 UPDATE Act
@@ -139,7 +146,6 @@ SET ID_Movie = 5
 WHERE Role = 'Regan MacNeil'
 
 
-
 UPDATE Act
 SET ID_Actor = 6
 WHERE Role = 'Indiana Jones'
@@ -147,7 +153,6 @@ WHERE Role = 'Indiana Jones'
 UPDATE Act
 SET ID_Movie = 6
 WHERE Role = 'Indiana Jones'
-
 
 
 UPDATE Act
@@ -159,8 +164,6 @@ SET ID_Movie = 2
 WHERE Role = 'Thor'
 
 
-
-
 UPDATE Act
 SET ID_Actor = 8
 WHERE Role = 'Abby Richter'
@@ -168,7 +171,6 @@ WHERE Role = 'Abby Richter'
 UPDATE Act
 SET ID_Movie = 8
 WHERE Role = 'Abby Richter'
-
 
 
 UPDATE Act
@@ -180,7 +182,6 @@ SET ID_Movie = 4
 WHERE Role = 'Noah Júnior'
 
 
-
 UPDATE Act
 SET ID_Actor = 1
 WHERE Role = 'Michael Corleone'
@@ -188,6 +189,34 @@ WHERE Role = 'Michael Corleone'
 UPDATE Act
 SET ID_Movie = 1
 WHERE Role = 'Michael Corleone'
+
+
+UPDATE Act
+SET ID_Actor = 10
+WHERE Role ='Beatrix Kiddo'
+
+UPDATE Act
+SET ID_Movie = 12
+WHERE Role = 'Beatrix Kiddo'
+
+
+UPDATE Act
+SET ID_Actor = 10
+WHERE Role ='Beatrix Kiddo'
+
+UPDATE Act
+SET ID_Movie = 12
+WHERE Role = 'Beatrix Kiddo'
+
+
+UPDATE Act
+SET ID_Actor = 11 
+WHERE Role = 'Bill'
+
+UPDATE Act
+SET ID_Movie = 13
+WHERE Role = 'Bill'
+
 
 /* 
    ================= Tables =================
