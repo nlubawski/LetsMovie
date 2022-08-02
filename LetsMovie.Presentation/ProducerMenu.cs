@@ -10,7 +10,7 @@ namespace LetsMovie.Presentation
     {
 
         public const string RegistrationProducer = @"
-Digite o nome da principal produtora:"
+Digite o nome da principal produtora:";
         
     }
 }
