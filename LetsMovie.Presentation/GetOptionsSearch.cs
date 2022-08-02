@@ -1,18 +1,16 @@
-﻿using LetsMovie.Presentation.Show;
-using System;
+﻿using System;
+using LetsMovie.Presentation.Show;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LetsMovie.Presentation.ProgramFlow
+namespace LetsMovie.Presentation
 {
-    public static class OptionsMenu
+    public class GetOptionsSearch
     {
-        public static void MainMenu()
+        public static void OptionsSearch()
         {
-
             Console.Clear();
             ScreenMenuLogic.ColorLetsMovie();
 
@@ -23,12 +21,12 @@ namespace LetsMovie.Presentation.ProgramFlow
                 Console.Clear();
                 control = true;
                 int answerOption = ScreenMenuLogic.GetOption(
-                     GeneralMenus.Welcome, 1, 4);
+                     GeneralMenus.SearchMenu, 1, 4);
 
                 switch (answerOption)
                 {
                     case 1:
-                        RegistrationMovie.;
+
                         break;
                     case 2:
 
@@ -40,7 +38,6 @@ namespace LetsMovie.Presentation.ProgramFlow
                         control = false;
                         break;
                 }
-
             }
         }
     }

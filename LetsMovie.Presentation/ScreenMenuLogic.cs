@@ -11,7 +11,7 @@ namespace LetsMovie.Presentation
     {
         public static void ColorLetsMovie()
         {
-            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.BackgroundColor = ConsoleColor.Cyan;
             Console.ForegroundColor = ConsoleColor.Black;
         }
 
@@ -26,8 +26,8 @@ namespace LetsMovie.Presentation
                 var defaultBackgroundColor = Console.BackgroundColor;
                 var defaultForegroundColor = Console.BackgroundColor;
                 Console.BackgroundColor = ConsoleColor.DarkRed;
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.WriteLine(errorMessage);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine($"\n {errorMessage}");
                 ColorLetsMovie();
 
             }
@@ -54,6 +54,20 @@ namespace LetsMovie.Presentation
 
             return number;
 
+        }
+
+        public static string GetInput(
+            string screen,
+            Predicate<bool> predicate,
+            string customMessage = null)
+        {
+            string response;
+            var messages = string.Empty;
+
+            while (!predicate.Invoke(response = ShowMessage(screen, messages)))
+                messages = customMessage;
+
+            return response;
         }
     }
 }

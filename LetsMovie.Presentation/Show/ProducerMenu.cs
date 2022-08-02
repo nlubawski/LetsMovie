@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LetsMovie.Presentation
+namespace LetsMovie.Presentation.Show
 {
     public static class ProducerMenu
     {
 
         public const string RegistrationProducer = @"
 Digite o nome da principal produtora:";
-        
+
     }
 }

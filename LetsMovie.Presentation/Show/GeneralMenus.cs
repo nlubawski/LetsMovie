@@ -8,7 +8,7 @@ namespace LetsMovie.Presentation.Show
 {
     public static class GeneralMenus
     {
-        public const string GeneralMenu = @"
+        public const string Welcome = @"
 ==== Bem-vindo ao Lets Movie ====
 ==== Seu streaming de filmes, séries e documentários ====
 

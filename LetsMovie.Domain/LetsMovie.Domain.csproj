@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LetsMovie.Presentation\LetsMovie.Presentation.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LetsMovie.Presentation
+namespace LetsMovie.Presentation.Show
 {
     public static class EpisodeMenus
     {
@@ -13,6 +13,6 @@ Digite o título do episódio:";
 
         public const string RegistrationEpisodeoOfSeason = @"
 Digite o número do episódio na temporada:";
-        
+
     }
 }
