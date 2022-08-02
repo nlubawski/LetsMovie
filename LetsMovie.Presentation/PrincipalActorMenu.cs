@@ -8,9 +8,8 @@ namespace LetsMovie.Presentation
 {
     public static class PrincipalActorMenu
     {
-        public static void RegistrationActor()
-        {
-            Console.WriteLine("Digite o nome do ator principal:");
-        }
+        public const string RegistrationActor =
+@"Digite o nome do ator principal:";
+
     }
 }

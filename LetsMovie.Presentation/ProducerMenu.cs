@@ -8,9 +8,9 @@ namespace LetsMovie.Presentation
 {
     public static class ProducerMenu
     {
-        public static void RegistrationProducer()
-        {
-            Console.WriteLine("Digite o nome da principal produtora:");
-        }
+
+        public const string RegistrationProducer = @"
+Digite o nome da principal produtora:"
+        
     }
 }

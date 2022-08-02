@@ -1,5 +1,4 @@
-﻿using LetsMovie.Presentation.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,34 +6,30 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Presentation
 {
-    public class MoviesMenus : IMoviesMenu
+    public static class MoviesMenus
     {
-        public void RegistrationTitle()
-        {
-            Console.WriteLine("##   Cadastro de Filme   ##");
-            Console.WriteLine("Digite o título do filme:");
-        }
 
-        public void RegistrationGender()
-        {
-            Console.WriteLine("Digite o gênero:");
-            Console.WriteLine("1. Ação");
-            Console.WriteLine("2. Aventura");
-            Console.WriteLine("3. Heróis");
-            Console.WriteLine("4. Comédia");
-            Console.WriteLine("5. Comédia Romântica");
-            Console.WriteLine("6. Romance");
-            Console.WriteLine("7. Terror");
-        }
+        public const string RegistrationTitle = @"
+##   Cadastro de Filme   ##
+Digite o título do filme:";
 
-        public void RegistrationDate()
-        {
-            Console.WriteLine("Digite a data de lançamento no formato (DD/MM/AAAA):");
-        }
+        public const string RegistrationGender = @"
+Digite o gênero:
+1. Ação
+2. Aventura
+3. Heróis
+4. Comédia
+5. Comédia Romântica
+6. Romance
+7. Terror";
 
-        public void SearchMovie()
-        {
-            Console.WriteLine("Digite o nome do filme que deseja assistir:");
-        }
+        public const string RegistrationDate = @"
+Digite a data de lançamento no formato (DD/MM/AAAA):";
+
+
+        public const string SearchMovie = @"
+Digite o nome do filme que deseja assistir:";
+
     }
 }
+

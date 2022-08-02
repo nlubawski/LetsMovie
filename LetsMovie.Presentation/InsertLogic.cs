@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Presentation
 {
-    internal class InsertLogic
+    public class InsertLogic
     {
     }
 }

@@ -1,4 +1,5 @@
 ﻿using LetsMovie.Infra;
+using LetsMovie.Presentation.ProgramFlow;
 
 namespace LetsMovie
 {
@@ -8,8 +9,7 @@ namespace LetsMovie
         {
             //new Inserir("nnnaaaaaaaann", "tchiriri", "sanca", "12345-678", "SP");
 
-            Console.WriteLine("pesquiseee");
-            new Consult(Console.ReadLine());
+            OptionsMenu.MainMenu();
 
             //new Inserir("As Branquelas", "Comedy", Convert.ToDateTime("2004/08/27"));
 
