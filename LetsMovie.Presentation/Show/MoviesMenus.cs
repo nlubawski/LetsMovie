@@ -24,7 +24,7 @@ Digite o gênero:
 7. Terror";
 
         public const string RegistrationDate = @"
-Digite a data de lançamento no formato (DD/MM/AAAA):";
+Digite a data de lançamento no formato (AAAA-MM-DD):";
 
 
         public const string SearchMovie = @"

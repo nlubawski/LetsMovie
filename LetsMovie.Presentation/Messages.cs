@@ -12,6 +12,8 @@ namespace LetsMovie.Presentation
 
         public const string ErrorSize = "Tamanho acima do permitido.";
 
-        public const string RegistrationOk = "Adicionado com sucesso.";
+        public const string Registration = "Gravando...";
+
+        public const string RegistrationInSqlServer = "Adicionado no catálogo com sucesso.";
     }
 }
