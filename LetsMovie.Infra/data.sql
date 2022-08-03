@@ -620,6 +620,39 @@ SET ID_MOVIE = @ID_Movie
 WHERE Role = @ROLE
 
 
+-- deleta ator, filme e papel
+CREATE PROCEDURE dbo.spDeleteMovieActActor
+(
+@title VARCHAR(100) 
+)
+AS
+
+DECLARE @ID_Movie INT, @ID_Actor INT 
+
+SELECT  @ID_Movie = ID_Movie FROM Movie WHERE Title LIKE @title+'%'
+
+SELECT @ID_Actor = ID_Actor FROM Act WHERE ID_Movie = @ID_Movie;
+
+DELETE FROM Act WHERE ID_Actor = @ID_Actor;
+DELETE FROM Movie WHERE ID_Movie = @ID_Movie;
+DELETE FROM PrincipalActor WHERE ID_Actor = @ID_Actor;
+
+-- atualizar nome do filme
+
+CREATE PROCEDURE spUpdateTitleMovie
+(
+@title VARCHAR(100),
+@newTitle VARCHAR(100) 
+)
+AS
+
+DECLARE @ID_Movie INT
+
+SELECT  @ID_Movie = ID_Movie FROM Movie WHERE Title LIKE @title+'%'
+
+UPDATE Movie 
+SET Title = @newTitle 
+WHERE ID_Movie = @ID_Movie;
 
 /*==========================
 

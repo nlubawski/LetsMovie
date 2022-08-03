@@ -36,6 +36,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                         new Consult();
                         break;
                     case 3:
+                        new Update();
                         break;
                     case 4:
                         new Delete();
