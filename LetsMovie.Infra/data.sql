@@ -596,6 +596,31 @@ FROM #DocumentarioParaConhecer
 END;
 GO
 
+-- Insere Ator e Papel 
+CREATE PROCEDURE dbo.spInsertAct
+(
+@ROLE AS VARCHAR(40),
+@title VARCHAR(100), 
+@actor VARCHAR(100)
+)
+AS
+
+DECLARE @ID_Movie INT, @ID_Actor INT 
+
+SELECT  @ID_Movie = ID_Movie FROM Movie WHERE Title = @title
+
+SELECT @ID_Actor = ID_Actor FROM PrincipalActor WHERE Name = @actor;
+
+UPDATE Act
+SET ID_Actor = @ID_Actor
+WHERE Role = @ROLE
+
+UPDATE Act
+SET ID_MOVIE = @ID_Movie
+WHERE Role = @ROLE
+
+
+
 /*==========================
 
 TRIGGER
@@ -630,15 +655,15 @@ BEGIN
         ELSE NULL
     END
     IF @comando = 'Delete'
-        INSERT INTO Movie_logs (command, date_log, previous_column, current_column, user_made_change)
+        INSERT INTO Movie_logs (command, date_log, previous_title_column, previous_gender_column, user_made_change)
         SELECT @comando, GETDATE(), d.Title, d.Gender, USER_NAME() 
         FROM deleted AS d
     IF @comando = 'Insert'
-        INSERT INTO Movie_logs (command, date_log, previous_column, current_column, user_made_change)
+        INSERT INTO Movie_logs (command, date_log, previous_title_column, previous_gender_column, user_made_change)
         SELECT @comando, GETDATE(), i.Title, i.Gender, USER_NAME() 
         FROM inserted AS i
     IF @comando = 'Update'
-        INSERT INTO Movie_logs (command, date_log, previous_column, current_column, previous_value_column, current_value_column, user_made_change)
+        INSERT INTO Movie_logs (command, date_log, previous_title_column, previous_gender_column, current_title_column, current_gender_column, user_made_change)
         SELECT @comando, GETDATE(), d.Title, d.Gender, i.Title, i.Gender, USER_NAME() 
         FROM deleted AS d, inserted  AS i
 END
@@ -655,9 +680,5 @@ SET ID_Movie = 15
 WHERE Role = 'Emma Morley ';
 GO
 
-UPDATE Movie SET Title='One Day' WHERE Title='Um dia';
 
-exec sp_rename 'Movie_logs.current_column', 'previous_gender_column', 'column' ;
-exec sp_rename 'Movie_logs.previous_column', 'previous_title_column', 'column' ;
-exec sp_rename 'Movie_logs.previous_value_column', 'current_title_column', 'column' ;
-exec sp_rename 'Movie_logs.current_value_column', 'current_gender_column', 'column' ;
+

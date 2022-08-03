@@ -14,27 +14,28 @@ namespace LetsMovie.Infra
         SqlCommand cmd = new SqlCommand();
         public Insert(string title, string gender, DateTime dateOfRelease, string actor, string role)
         {
-            cmd.CommandText = "INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES (@title, @gender, @dateOfRelease)";
+            cmd.CommandText = "INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES (@title, @gender, @dateOfRelease)" +
+                " INSERT INTO PrincipalActor(Name) VALUES(@actor) INSERT INTO Act(Role) VALUES(@role) " +
+                "EXEC spInsertAct @role, @title, @actor;";
             cmd.Parameters.AddWithValue("@title", title);
             cmd.Parameters.AddWithValue("@gender", gender);
             cmd.Parameters.AddWithValue("@dateOfRelease", dateOfRelease);
+            cmd.Parameters.AddWithValue("@actor", actor);
+            cmd.Parameters.AddWithValue("@role", role);
             try
             {
-                //conectar com o banco
                 cmd.Connection = conn.connect();
-
-                //executar comando
                 cmd.ExecuteNonQuery();
-                //desconectar
                 conn.disconnect();
-                Console.WriteLine("Cadastrado com sucesso.");
+                Console.WriteLine("Cadastrado no movies com sucesso.");
 
             }
             catch (SqlException erro)
             {
-                Console.WriteLine("Erro ao tentar se conectar com o banco de dados");
+                Console.WriteLine($"Erro ao tentar se conectar com a tabela movies banco de dados {erro}");
 
             }
+
         }
 
     }

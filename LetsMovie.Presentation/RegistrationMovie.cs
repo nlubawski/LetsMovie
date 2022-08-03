@@ -1,4 +1,5 @@
 ﻿using LetsMovie.Domain;
+using LetsMovie.Infra;
 using LetsMovie.Presentation.Show;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace LetsMovie.Presentation
                 Messages.ErrorNull);
 
             EnumGender answerGender = GetOptionsGender.OptionsGender();
+            Console.Clear();
 
             Console.WriteLine(MoviesMenus.RegistrationDate);
             var answerDate = Console.ReadLine();
@@ -32,14 +34,21 @@ namespace LetsMovie.Presentation
             Console.Clear();
 
             Console.WriteLine(Actmenu.RegistrationAct);
-            var answerActMenu = Console.ReadLine();
+            var answerRole = Console.ReadLine();
             Console.Clear();
 
             Console.WriteLine(Messages.Registration);
             Console.ReadKey();
 
+            new Insert(answerTitle, answerGender.ToString(), Convert.ToDateTime(answerDate), answerPrincipalActor, answerRole);
+            Console.ReadKey();
 
-            
+
+
+
+
+
+
 
 
 
