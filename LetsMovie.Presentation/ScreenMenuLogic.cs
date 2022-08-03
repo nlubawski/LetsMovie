@@ -58,7 +58,7 @@ namespace LetsMovie.Presentation
 
         public static string GetInput(
             string screen,
-            Predicate<bool> predicate,
+            Predicate<string> predicate,
             string customMessage = null)
         {
             string response;

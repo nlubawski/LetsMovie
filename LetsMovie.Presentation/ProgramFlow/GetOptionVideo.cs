@@ -10,7 +10,7 @@ namespace LetsMovie.Presentation.ProgramFlow
 {
     public class GetOptionVideo
     {
-        public void OptionsMovie()
+        public static void OptionsVideo()
         {
             Console.Clear();
             ScreenMenuLogic.ColorLetsMovie();
@@ -23,11 +23,12 @@ namespace LetsMovie.Presentation.ProgramFlow
                 control = true;
                 int answerOption = ScreenMenuLogic.GetOption(
                      GeneralMenus.RegistrationVideo, 1, 4);
+                RegistrationMovie registrationMovie = new RegistrationMovie();
 
                 switch (answerOption)
                 {
                     case 1:
-                        RegistrationMovie.Registration();
+                        registrationMovie.Registration();
                         break;
                     case 2:
 

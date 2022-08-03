@@ -1,5 +1,4 @@
 ﻿using LetsMovie.Presentation.Show;
-using LetsMovie.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +15,10 @@ namespace LetsMovie.Presentation
             //Console.WriteLine(MoviesMenus.RegistrationTitle);
             //string answerTitle = Console.ReadLine();
             //Validation.ValidateString(answerTitle, Validation.MaxSizeTitle);
-            var answerTitle = ScreenMenuLogic.GetInput(MoviesMenus.RegistrationTitle,
-                Validation.ValidateString(answerTitle, Validation.MaxSizeTitle));
+            string answerTitle = ScreenMenuLogic.GetInput(
+                MoviesMenus.RegistrationTitle,
+                Validation.ValidateString,
+                Messages.ErrorNull);               ;
         }
     }
 }

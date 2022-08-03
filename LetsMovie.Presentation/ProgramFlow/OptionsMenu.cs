@@ -24,11 +24,12 @@ namespace LetsMovie.Presentation.ProgramFlow
                 control = true;
                 int answerOption = ScreenMenuLogic.GetOption(
                      GeneralMenus.Welcome, 1, 4);
+                var regitrationMovie = new RegistrationMovie();
 
                 switch (answerOption)
                 {
                     case 1:
-                        RegistrationMovie.;
+                        GetOptionVideo.OptionsVideo();
                         break;
                     case 2:
 
