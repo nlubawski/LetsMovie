@@ -14,10 +14,16 @@ namespace LetsMovie.Presentation.Show
 
 Digite a opção desejada:
 
-1. Cadastrar
+1. Criar
 2. Buscar
-3. Ver catálogo
-4. Sair";
+3. Atualizar
+4. Deletar
+5. Sair";
+
+//1. Cadastrar
+//2. Buscar
+//3. Ver catálogo
+//4. Sair";
 
 
         public const string RegistrationVideo = @"
