@@ -1,4 +1,5 @@
-﻿using LetsMovie.Presentation.Show;
+﻿using LetsMovie.Infra;
+using LetsMovie.Presentation.Show;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -32,10 +33,10 @@ namespace LetsMovie.Presentation.ProgramFlow
                         GetOptionVideo.OptionsVideo();
                         break;
                     case 2:
-
+                        new Consult();
                         break;
                     case 3:
-
+                 
                         break;
                     case 4:
                         control = false;

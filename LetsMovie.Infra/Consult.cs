@@ -10,27 +10,32 @@ namespace LetsMovie.Infra
 {
     public class Consult
     {
+        
         SqlDataAdapter adapter = new SqlDataAdapter();
 
         Connection conn = new Connection();
         SqlCommand cmd = new SqlCommand();
         string strSQL = "SELECT * FROM Movie WHERE Title LIKE @titulo";
 
-        public Consult(string pesquisa)
+        string consult;
+        
+        public Consult()
         {
+            Console.WriteLine("Digite o nome do filme a consultar...");
+            consult = Console.ReadLine();
             try
             {
-                //ligacao entre comando e conexao
-                Console.WriteLine("Abrindo conexão.");
+                //ligacao entre comando e conexao                
+                Console.WriteLine("\nAbrindo conexão... \n");
                 cmd.Connection = conn.connect();
                 //passa a string pro comando que sera executado
                 cmd.CommandText = strSQL;
 
                 //aqui o comando e´ executado
-                cmd.Parameters.Add("@titulo", SqlDbType.VarChar).Value = $"%{pesquisa}%";
+                cmd.Parameters.Add("@titulo", SqlDbType.VarChar).Value = $"%{consult}%";
                 cmd.ExecuteNonQuery();
 
-                if (pesquisa == string.Empty)
+                if (consult == string.Empty)
                 {
                     Console.WriteLine("Digite um título válido.");
                 }
@@ -49,15 +54,16 @@ namespace LetsMovie.Infra
                     {
                         for (int i = 0; i < count; i++)
                         {
-                            //var x = reader.GetString(i);
-                            Console.WriteLine(reader.GetValue(i));
-
-                            //aqui poderia organizar e printar certinho 
-                            //tirar o id e horário da hora
+                            
+                            Console.WriteLine($"{reader.GetName(i)} : {reader.GetValue(i)}");
+                            
                         }
+                        Console.WriteLine("\n");
                     }
-                } while (reader.NextResult()); //vai pra proxima linha
+                    
 
+                } while (reader.NextResult()); //vai pra proxima linha
+                Console.ReadKey();
 
             }
             catch (Exception ex)

@@ -15,5 +15,6 @@ namespace LetsMovie.Presentation
         public const string Registration = "Gravando...";
 
         public const string RegistrationInSqlServer = "Adicionado no catálogo com sucesso.";
+
     }
 }
