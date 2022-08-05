@@ -22,6 +22,7 @@ namespace LetsMovie.Infra
             cmd.Parameters.AddWithValue("@dateOfRelease", dateOfRelease);
             cmd.Parameters.AddWithValue("@actor", actor);
             cmd.Parameters.AddWithValue("@role", role);
+
             try
             {
                 cmd.Connection = conn.connect();

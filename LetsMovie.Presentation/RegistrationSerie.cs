@@ -40,7 +40,14 @@ namespace LetsMovie.Presentation
                 Validation.ValidateString
                 );
 
-            new InsertSerie(answerTitle, answerSeason, answerNumberOfEpisode, episodes);
+            new InsertSerie(answerTitle, answerSeason, answerNumberOfEpisode);
+
+            foreach (KeyValuePair<int, string> entry in episodes)
+            {
+                new InsertEpisode(answerTitle, entry.Value, entry.Key);
+
+            }
+
             Console.ReadKey();
 
         }
