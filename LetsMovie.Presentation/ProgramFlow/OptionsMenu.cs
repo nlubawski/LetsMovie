@@ -24,7 +24,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                 Console.Clear();
                 control = true;
                 int answerOption = ScreenMenuLogic.GetOption(
-                     GeneralMenus.Welcome, 1, 4);
+                     GeneralMenus.Welcome, 1, 5);
                 var regitrationMovie = new RegistrationMovie();
 
                 switch (answerOption)
