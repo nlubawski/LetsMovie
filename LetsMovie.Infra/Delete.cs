@@ -14,6 +14,7 @@ namespace LetsMovie.Infra
         string title;
         public Delete()
         {
+            Console.Clear();
             Console.WriteLine("Digite o nome do filme que deseja Deletar: ");
             title = Console.ReadLine();
             cmd.CommandText = "EXEC spDeleteMovieActActor @title";

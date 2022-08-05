@@ -15,6 +15,7 @@ namespace LetsMovie.Infra
             string title, newTitle;
             public Update()
             {
+                Console.Clear();
                 Console.WriteLine("Digite o nome do filme que deseja atualizar o Titulo: ");
                 title = Console.ReadLine();
                 Console.WriteLine("Digite o novo titulo: ");

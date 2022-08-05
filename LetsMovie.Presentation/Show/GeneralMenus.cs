@@ -16,8 +16,8 @@ Digite a opção desejada:
 
 1. Cadastrar vídeo
 2. Buscar vídeo
-3. Atualizar
-4. Deletar
+3. Atualizar filme
+4. Deletar filme
 5. Sair";
 
 //1. Cadastrar
