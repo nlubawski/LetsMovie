@@ -29,12 +29,13 @@ namespace LetsMovie.Infra
                 cmd.ExecuteNonQuery();
                 conn.disconnect();
                 Console.WriteLine("Cadastrado no movies com sucesso.");
+                Console.ReadKey();
 
             }
             catch (SqlException erro)
             {
                 Console.WriteLine($"Erro ao tentar se conectar com a tabela movies banco de dados {erro}");
-
+                Console.ReadKey();
             }
 
         }

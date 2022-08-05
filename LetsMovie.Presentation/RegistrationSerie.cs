@@ -1,4 +1,5 @@
 ﻿using LetsMovie.Infra;
+using LetsMovie.Presentation.Interface;
 using LetsMovie.Presentation.Show;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Presentation
 {
-    public class RegistrationSerie
+    public class RegistrationSerie : IRegistrationVideo
     {
         public void Registration()
         {

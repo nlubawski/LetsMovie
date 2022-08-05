@@ -1,5 +1,6 @@
 ﻿using LetsMovie.Domain;
 using LetsMovie.Infra;
+using LetsMovie.Presentation.Interface;
 using LetsMovie.Presentation.Show;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Presentation
 {
-    public class RegistrationMovie
+    public class RegistrationMovie: IRegistrationVideo
     {
         public void Registration()
         {
@@ -43,7 +44,6 @@ namespace LetsMovie.Presentation
             Console.ReadKey();
 
             new InsertMovie(answerTitle, answerGender.ToString(), Convert.ToDateTime(answerDate), answerPrincipalActor, answerRole);
-            Console.ReadKey();
 
         }
     }

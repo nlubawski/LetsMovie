@@ -53,11 +53,12 @@ CREATE TABLE Documentary
 ( 
  ID_Doc INT IDENTITY (1,1),
  Title VARCHAR(100) NOT NULL,
- Country VARCHAR(40) CHECK (Country IN ('Brazil', 'USA', 'European Movie', 'Asiatic Movie', 'LatinAmerica Movie', 'African Movie')),    
+ Country VARCHAR(40) CHECK (Country IN ('Brazil', 'USA', 'European', 'Asiatic', 'LatinAmerica', 'African')),    
  ID_Prod INT,
  CONSTRAINT PK_id_doc PRIMARY KEY (ID_Doc),
 );
 GO
+
 
 CREATE TABLE Serie 
 ( 
@@ -670,6 +671,22 @@ SELECT  @ID_Serie = ID_Serie FROM Serie WHERE Title = @Title
 
 INSERT INTO Episode (Title,NumberOfSeasonsEpisode,ID_Serie) VALUES (@TitleEpisode,@NumberOfEpisodeInTheSeason,@ID_Serie)
 
+-- Insert Documentary
+
+CREATE PROCEDURE [dbo].[spInsertDocumentary]
+(
+@Title VARCHAR(100), 
+@producer VARCHAR(100)
+)
+AS
+
+DECLARE @ID_Prod INT
+
+SELECT  @ID_Prod = ID_Prod FROM Producer WHERE Name = @producer
+
+UPDATE Documentary 
+SET ID_Prod = @ID_Prod
+WHERE Title = @Title
 
 
 /*==========================

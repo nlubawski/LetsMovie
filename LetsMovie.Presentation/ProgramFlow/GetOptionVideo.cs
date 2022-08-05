@@ -25,6 +25,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                      GeneralMenus.RegistrationVideo, 1, 4);
                 RegistrationMovie registrationMovie = new RegistrationMovie();
                 RegistrationSerie registrationSerie = new RegistrationSerie();
+                RegistrationDocumentary registrationDocumentary = new RegistrationDocumentary();
 
                 switch (answerOption)
                 {
@@ -35,7 +36,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                         registrationSerie.Registration();
                         break;
                     case 3:
-
+                        registrationDocumentary.Registration();
                         break;
                     case 4:
                         control = false;
