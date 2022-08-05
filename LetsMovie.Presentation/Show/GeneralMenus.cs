@@ -14,7 +14,7 @@ namespace LetsMovie.Presentation.Show
 
 Digite a opção desejada:
 
-1. Criar
+1. Cadastrar vídeo
 2. Buscar
 3. Atualizar
 4. Deletar
