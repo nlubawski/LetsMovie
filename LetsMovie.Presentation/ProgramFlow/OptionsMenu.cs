@@ -33,7 +33,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                         GetOptionVideo.OptionsVideo();
                         break;
                     case 2:
-                        new Consult();
+                        GetConsultVideo.ConsultVideo();
                         break;
                     case 3:
                         new Update();

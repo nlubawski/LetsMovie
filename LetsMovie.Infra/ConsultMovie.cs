@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Infra
 {
-    public class Consult
+    public class ConsultMovie
     {
         
         SqlDataAdapter adapter = new SqlDataAdapter();
@@ -19,7 +19,7 @@ namespace LetsMovie.Infra
 
         string consult;
         
-        public Consult()
+        public ConsultMovie()
         {
             Console.WriteLine("Digite o nome do filme a consultar...");
             consult = Console.ReadLine();
@@ -68,7 +68,7 @@ namespace LetsMovie.Infra
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"deu ruim: {ex.Message}");
+                Console.WriteLine($"Erro na conexão: {ex.Message}");
             }
             finally
             {
