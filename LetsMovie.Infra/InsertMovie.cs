@@ -8,11 +8,11 @@ using System.Data.SqlClient;
 
 namespace LetsMovie.Infra
 {
-    public class Insert
+    public class InsertMovie
     {
         Connection conn = new Connection();
         SqlCommand cmd = new SqlCommand();
-        public Insert(string title, string gender, DateTime dateOfRelease, string actor, string role)
+        public InsertMovie(string title, string gender, DateTime dateOfRelease, string actor, string role)
         {
             cmd.CommandText = "INSERT INTO Movie (Title, Gender, DateOfRelease) VALUES (@title, @gender, @dateOfRelease)" +
                 " INSERT INTO PrincipalActor(Name) VALUES(@actor) INSERT INTO Act(Role) VALUES(@role) " +

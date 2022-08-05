@@ -24,6 +24,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                 int answerOption = ScreenMenuLogic.GetOption(
                      GeneralMenus.RegistrationVideo, 1, 4);
                 RegistrationMovie registrationMovie = new RegistrationMovie();
+                RegistrationSerie registrationSerie = new RegistrationSerie();
 
                 switch (answerOption)
                 {
@@ -31,7 +32,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                         registrationMovie.Registration();
                         break;
                     case 2:
-
+                        registrationSerie.Registration();
                         break;
                     case 3:
 

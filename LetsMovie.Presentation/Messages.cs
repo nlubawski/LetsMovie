@@ -8,7 +8,9 @@ namespace LetsMovie.Presentation
 {
     public static class Messages
     {
-        public const string ErrorNull = "Entrada inválida, tente novamente.";
+        public const string ErrorGeneric = "Entrada inválida, tente novamente.";
+
+        public const string ErrorEpisode = "Digite um episódio válido, tente novamente.";
 
         public const string ErrorSize = "Tamanho acima do permitido.";
 

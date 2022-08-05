@@ -654,6 +654,24 @@ UPDATE Movie
 SET Title = @newTitle 
 WHERE ID_Movie = @ID_Movie;
 
+-- Insere Episódio
+
+CREATE PROCEDURE [dbo].[spInsertEpisode]
+(
+@Title VARCHAR(100), 
+@TitleEpisode VARCHAR(100),
+@NumberOfEpisodeInTheSeason int
+)
+AS
+
+DECLARE @ID_Serie INT
+
+SELECT  @ID_Serie = ID_Serie FROM Serie WHERE Title = @Title
+
+INSERT INTO Episode (Title,NumberOfSeasonsEpisode,ID_Serie) VALUES (@TitleEpisode,@NumberOfEpisodeInTheSeason,@ID_Serie)
+
+
+
 /*==========================
 
 TRIGGER

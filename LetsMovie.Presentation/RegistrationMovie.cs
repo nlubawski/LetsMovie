@@ -14,13 +14,10 @@ namespace LetsMovie.Presentation
         public void Registration()
         {
 
-            //Console.WriteLine(MoviesMenus.RegistrationTitle);
-            //string answerTitle = Console.ReadLine();
-            //Validation.ValidateString(answerTitle, Validation.MaxSizeTitle);
-            string answerTitle = ScreenMenuLogic.GetInput(
+            string answerTitle = ScreenMenuLogic.GetInputString(
                 MoviesMenus.RegistrationTitle,
                 Validation.ValidateString,
-                Messages.ErrorNull);
+                Messages.ErrorGeneric);
 
             EnumGender answerGender = GetOptionsGender.OptionsGender();
             Console.Clear();
@@ -29,35 +26,24 @@ namespace LetsMovie.Presentation
             var answerDate = Console.ReadLine();
             Console.Clear();
 
-            Console.WriteLine(PrincipalActorMenu.RegistrationActor);
-            var answerPrincipalActor = Console.ReadLine();
-            Console.Clear();
 
-            Console.WriteLine(Actmenu.RegistrationAct);
-            var answerRole = Console.ReadLine();
-            Console.Clear();
+            string answerPrincipalActor = ScreenMenuLogic.GetInputString(
+            PrincipalActorMenu.RegistrationActor,
+            Validation.ValidateString,
+            Messages.ErrorGeneric);
+
+
+            string answerRole = ScreenMenuLogic.GetInputString(
+            Actmenu.RegistrationAct,
+            Validation.ValidateString,
+            Messages.ErrorGeneric);
+
 
             Console.WriteLine(Messages.Registration);
             Console.ReadKey();
 
-            new Insert(answerTitle, answerGender.ToString(), Convert.ToDateTime(answerDate), answerPrincipalActor, answerRole);
+            new InsertMovie(answerTitle, answerGender.ToString(), Convert.ToDateTime(answerDate), answerPrincipalActor, answerRole);
             Console.ReadKey();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
     }

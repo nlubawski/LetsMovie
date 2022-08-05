@@ -28,7 +28,9 @@ Digite a opção desejada:
 
         public const string RegistrationVideo = @"
 ##   Cadastro    ##
+
 Digite a opção desejada:
+
 1. Cadastrar Filme
 2. Cadastrar Série
 3. Cadastrar Documentário
@@ -37,7 +39,9 @@ Digite a opção desejada:
 
         public const string SearchMenu = @"
 ##   Buscar  ##
-Digite a opção desejada
+
+Digite a opção desejada:
+
 1. Buscar Filme
 2. Buscar Série
 3. Buscar Documentário

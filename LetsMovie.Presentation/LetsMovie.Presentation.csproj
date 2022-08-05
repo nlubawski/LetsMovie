@@ -8,13 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LetsMovie.Domain\LetsMovie.Domain.csproj" />
-    <ProjectReference Include="..\LetsMovie.Infra\LetsMovie.Infra.csproj" />
-    <ProjectReference Include="..\LetsMovie.Service\LetsMovie.Service.csproj" />
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="Interfaces\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\LetsMovie.Domain\LetsMovie.Domain.csproj" />
+    <ProjectReference Include="..\LetsMovie.Infra\LetsMovie.Infra.csproj" />
+    <ProjectReference Include="..\LetsMovie.Service\LetsMovie.Service.csproj" />
   </ItemGroup>
 
 </Project>

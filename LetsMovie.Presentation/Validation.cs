@@ -24,8 +24,16 @@ namespace LetsMovie.Presentation
             }
 
             return validate;
-
         }
 
+        public static bool ValidateInt(int obj)
+        {
+            if (obj <= 0)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
