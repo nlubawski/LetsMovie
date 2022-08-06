@@ -39,7 +39,7 @@ namespace LetsMovie.Presentation.ProgramFlow
                         new Update();
                         break;
                     case 4:
-                        new Delete();
+                        GetDeleteVideo.DeleteVideo();
                         break;                      
                     case 5:
                         control = false;

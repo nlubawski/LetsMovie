@@ -8,7 +8,8 @@ namespace LetsMovie.Infra
         SqlConnection conn = new SqlConnection();
         public Connection()
         {
-            conn.ConnectionString = @"Data Source=vps40251.publiccloud.com.br;Initial Catalog=LestMovie;Persist Security Info=True;User ID=thayssa.souza;Password=Th@y55@4";
+            conn.ConnectionString = @"Data Source=vps40251.publiccloud.com.br;Initial Catalog=LestMovie;User ID=nathan.lubawski;Password=kaliCat18$";
+           //conn.ConnectionString = @"Data Source=vps40251.publiccloud.com.br;Initial Catalog=LestMovie;Persist Security Info=True;User ID=thayssa.souza;Password=Th@y55@4";
         }
 
         public SqlConnection connect()

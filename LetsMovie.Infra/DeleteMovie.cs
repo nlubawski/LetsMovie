@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Infra
 {
-    public class Delete
+    public class DeleteMovie
     {
         Connection conn = new Connection();
         SqlCommand cmd = new SqlCommand();
         string title;
-        public Delete()
+        public DeleteMovie()
         {
             Console.Clear();
             Console.WriteLine("Digite o nome do filme que deseja Deletar: ");

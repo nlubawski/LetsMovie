@@ -622,7 +622,7 @@ WHERE Role = @ROLE
 
 
 -- deleta ator, filme e papel
-CREATE PROCEDURE dbo.spDeleteMovieActActor
+CREATE PROCEDURE spDeleteMovieActActor
 (
 @title VARCHAR(100) 
 )
@@ -637,6 +637,36 @@ SELECT @ID_Actor = ID_Actor FROM Act WHERE ID_Movie = @ID_Movie;
 DELETE FROM Act WHERE ID_Actor = @ID_Actor;
 DELETE FROM Movie WHERE ID_Movie = @ID_Movie;
 DELETE FROM PrincipalActor WHERE ID_Actor = @ID_Actor;
+
+-- deleta Serie e seus episódios
+
+CREATE PROCEDURE spDeleteSerie
+(
+@title VARCHAR(100) 
+)
+AS
+
+DECLARE @ID_Serie INT 
+
+SELECT  @ID_Serie = ID_Serie FROM Serie WHERE Title LIKE @title+'%'
+
+DELETE FROM Episode WHERE ID_Serie = @ID_Serie;
+DELETE FROM Serie WHERE ID_Serie = @ID_Serie;
+
+-- deletar documentário e produtora
+CREATE PROCEDURE spDeleteDocumentary
+(
+@title VARCHAR(100) 
+)
+AS
+
+DECLARE @ID_Doc INT, @ID_Prod INT 
+
+SELECT  @ID_Doc = ID_Doc,@ID_Prod = ID_Prod  FROM Documentary WHERE Title LIKE @title+'%'
+
+DELETE FROM Documentary WHERE ID_Doc = @ID_Doc;
+DELETE FROM Producer WHERE ID_Prod = @ID_Prod;
+
 
 -- atualizar nome do filme
 
