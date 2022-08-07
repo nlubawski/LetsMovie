@@ -668,7 +668,7 @@ DELETE FROM Documentary WHERE ID_Doc = @ID_Doc;
 DELETE FROM Producer WHERE ID_Prod = @ID_Prod;
 
 
--- atualizar nome do filme
+-- Atualizar título do filme
 
 CREATE PROCEDURE spUpdateTitleMovie
 (
@@ -684,6 +684,42 @@ SELECT  @ID_Movie = ID_Movie FROM Movie WHERE Title LIKE @title+'%'
 UPDATE Movie 
 SET Title = @newTitle 
 WHERE ID_Movie = @ID_Movie;
+
+-- Atualizar título da série
+
+CREATE PROCEDURE spUpdateTitleSerie
+(
+@title VARCHAR(100),
+@newTitle VARCHAR(100) 
+)
+AS
+
+DECLARE @ID_Serie INT
+
+SELECT  @ID_Serie = ID_Serie FROM Serie WHERE Title LIKE @title+'%'
+
+UPDATE Serie 
+SET Title = @newTitle 
+WHERE ID_Serie = @ID_Serie;
+
+
+-- Atualizar título do Documentário
+
+CREATE PROCEDURE spUpdateTitleDocumentary
+(
+@title VARCHAR(100),
+@newTitle VARCHAR(100) 
+)
+AS
+
+DECLARE @ID_Doc INT
+
+SELECT  @ID_Doc = ID_Doc FROM Documentary WHERE Title LIKE @title+'%'
+
+UPDATE Documentary 
+SET Title = @newTitle 
+WHERE ID_Doc = @ID_Doc;
+
 
 -- Insere Episódio
 

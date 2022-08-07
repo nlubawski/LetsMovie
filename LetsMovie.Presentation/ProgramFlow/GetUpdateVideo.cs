@@ -1,19 +1,17 @@
-﻿using LetsMovie.Infra;
-using LetsMovie.Presentation.Show;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LetsMovie.Infra;
+using LetsMovie.Presentation.Show;
 
 namespace LetsMovie.Presentation.ProgramFlow
 {
-    public static class OptionsMenu
+    public class GetUpdateVideo
     {
-        public static void MainMenu()
+        public static void UpdateVideo()
         {
-
             Console.Clear();
             ScreenMenuLogic.ColorLetsMovie();
 
@@ -24,28 +22,23 @@ namespace LetsMovie.Presentation.ProgramFlow
                 Console.Clear();
                 control = true;
                 int answerOption = ScreenMenuLogic.GetOption(
-                     GeneralMenus.Welcome, 1, 5);
-                var regitrationMovie = new RegistrationMovie();
+                     GeneralMenus.UpdateMenu, 1, 4);
 
                 switch (answerOption)
                 {
                     case 1:
-                        GetOptionVideo.OptionsVideo();
+                        new UpdateMovie();
                         break;
                     case 2:
-                        GetConsultVideo.ConsultVideo();
+                        new UpdateSerie();
                         break;
                     case 3:
-                        GetUpdateVideo.UpdateVideo();
+                        new UpdateDocumentary();
                         break;
                     case 4:
-                        GetDeleteVideo.DeleteVideo();
-                        break;                      
-                    case 5:
                         control = false;
                         break;
                 }
-
             }
         }
     }

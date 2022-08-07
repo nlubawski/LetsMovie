@@ -16,14 +16,10 @@ Digite a opção desejada:
 
 1. Cadastrar vídeo
 2. Buscar vídeo
-3. Atualizar filme
+3. Atualizar vídeo
 4. Deletar vídeo
 5. Sair";
 
-//1. Cadastrar
-//2. Buscar
-//3. Ver catálogo
-//4. Sair";
 
 
         public const string RegistrationVideo = @"
@@ -45,6 +41,16 @@ Digite a opção desejada:
 1. Buscar Filme
 2. Buscar Série
 3. Buscar Documentário
+4. Retornar ao menu principal";
+
+        public const string UpdateMenu = @"
+##  Atualizar   ##
+
+Digite a opção desejada:
+
+1. Atualizar Filme
+2. Atualizar Série
+3. Atualizar Documentário
 4. Retornar ao menu principal";
 
         public const string DeleteMenu = @"

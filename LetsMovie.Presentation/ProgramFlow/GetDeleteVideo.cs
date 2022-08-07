@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Presentation.ProgramFlow
 {
-    internal class GetDeleteVideo
+    public class GetDeleteVideo
     {
             public static void DeleteVideo()
             {

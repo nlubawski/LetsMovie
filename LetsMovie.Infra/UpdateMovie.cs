@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace LetsMovie.Infra
 {
-
-        public class Update
+        public class UpdateMovie
         {
             Connection conn = new Connection();
             SqlCommand cmd = new SqlCommand();
             string title, newTitle;
-            public Update()
+            public UpdateMovie()
             {
                 Console.Clear();
                 Console.WriteLine("Digite o nome do filme que deseja atualizar o Titulo: ");
@@ -40,7 +39,6 @@ namespace LetsMovie.Infra
                     Console.ReadKey();
 
                 }
-
             }
         }
-    }
+}
