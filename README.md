@@ -1,6 +1,6 @@
 # LetsMovie | C# | SQL Server 
 
-O projeto - foi desenvolvido em parceira com mais dois devs - faz o recorte de um streaming com foco no objeto principal do negócio: os vídeos (subdividido em filmes, séries e documentários). O login de usuário, de início, foi desconsiderado propositalmente. Abaixo a modelagem do banco de dados:
+O projeto - foi desenvolvido em parceira entre [Marcelo](https://github.com/mosilva), [Nathan](https://github.com/nlubawski) e [Thayssa](https://github.com/thayssa-souza) - faz o recorte de um streaming com foco no objeto principal do negócio: os vídeos (subdividido em filmes, séries e documentários). O login de usuário, de início, foi desconsiderado propositalmente. Abaixo a modelagem do banco de dados:
 
 Modelo Conceitual - Programa BRMW 
 
