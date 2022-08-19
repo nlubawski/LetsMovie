@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMovie.Service", "LetsMo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMovie.Infra", "LetsMovie.Infra\LetsMovie.Infra.csproj", "{D330C536-532C-438A-9D74-A09AC606D3E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMovie.Documents", "LetsMovie.Documents\LetsMovie.Documents.csproj", "{9572542C-6EB7-42F0-82FC-BE59487C7888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsMovie.Documents", "LetsMovie.Documents\LetsMovie.Documents.csproj", "{9572542C-6EB7-42F0-82FC-BE59487C7888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsMovie.FormMenu", "LetsMovie.FormMenu\LetsMovie.FormMenu.csproj", "{1B7268F0-09B8-4DED-81DD-762F9D954725}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9572542C-6EB7-42F0-82FC-BE59487C7888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9572542C-6EB7-42F0-82FC-BE59487C7888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9572542C-6EB7-42F0-82FC-BE59487C7888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7268F0-09B8-4DED-81DD-762F9D954725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7268F0-09B8-4DED-81DD-762F9D954725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7268F0-09B8-4DED-81DD-762F9D954725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7268F0-09B8-4DED-81DD-762F9D954725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
