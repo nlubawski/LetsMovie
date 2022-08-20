@@ -60,5 +60,29 @@ namespace LetsMovie.FormMenu
         {
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmBuscar buscar = new frmBuscar();
+            buscar.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmAtualizar atualizar = new frmAtualizar();
+            atualizar.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmDeletar deletar = new frmDeletar();
+            deletar.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

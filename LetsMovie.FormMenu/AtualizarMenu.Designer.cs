@@ -1,6 +1,6 @@
 ﻿namespace LetsMovie.FormMenu
 {
-    partial class frmCadastrarMenu
+    partial class frmAtualizar
     {
         /// <summary>
         /// Required designer variable.
@@ -35,33 +35,33 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(651, 25);
+            this.btnSair.Location = new System.Drawing.Point(661, 33);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 5;
+            this.btnSair.TabIndex = 9;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             // 
             // btnSobre
             // 
-            this.btnSobre.Location = new System.Drawing.Point(337, 25);
+            this.btnSobre.Location = new System.Drawing.Point(347, 33);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(75, 23);
-            this.btnSobre.TabIndex = 4;
+            this.btnSobre.TabIndex = 8;
             this.btnSobre.Text = "Sobre";
             this.btnSobre.UseVisualStyleBackColor = true;
             // 
             // btnTelaInicial
             // 
-            this.btnTelaInicial.Location = new System.Drawing.Point(50, 25);
+            this.btnTelaInicial.Location = new System.Drawing.Point(60, 33);
             this.btnTelaInicial.Name = "btnTelaInicial";
             this.btnTelaInicial.Size = new System.Drawing.Size(75, 23);
-            this.btnTelaInicial.TabIndex = 3;
+            this.btnTelaInicial.TabIndex = 7;
             this.btnTelaInicial.Text = "Tela Inicial";
             this.btnTelaInicial.UseVisualStyleBackColor = true;
-            this.btnTelaInicial.Click += new System.EventHandler(this.btnTelaInicial_Click_1);
+            this.btnTelaInicial.Click += new System.EventHandler(this.btnTelaInicial_Click);
             // 
-            // frmCadastrarMenu
+            // frmAtualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,9 +69,9 @@
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnSobre);
             this.Controls.Add(this.btnTelaInicial);
-            this.Name = "frmCadastrarMenu";
+            this.Name = "frmAtualizar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastrar";
+            this.Text = "Atualizar";
             this.ResumeLayout(false);
 
         }

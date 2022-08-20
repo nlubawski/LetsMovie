@@ -36,7 +36,15 @@ namespace LetsMovie.FormMenu
 
         }
 
-        
+        private void btnTelaInicial_Click_1(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmMenu menu = new frmMenu();
+            menu.ShowDialog();
+            this.Visible = true;
+        }
+
+
 
         //private void btnSair_Click(object sender, EventArgs e)
         //{
