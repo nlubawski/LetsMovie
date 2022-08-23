@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace LetsMovie.FormMenu
 {
-    public partial class frmUpdateDoc : Form
+    public partial class frmDeleteMovies : Form
     {
-        public frmUpdateDoc()
+        public frmDeleteMovies()
         {
             InitializeComponent();
-        }
-
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            frmAtualizar atualizar = new frmAtualizar();
-            atualizar.ShowDialog();
-            this.Visible = true;
         }
 
         private void btnTelaInicial_Click(object sender, EventArgs e)
@@ -33,14 +25,12 @@ namespace LetsMovie.FormMenu
             this.Visible = true;
         }
 
-        private void frmUpdateDoc_Load(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void frmUpdateSerie_Click(object sender, EventArgs e)
-        {
-
+            this.Visible = false;
+            frmDeletar deletar = new frmDeletar();
+            deletar.ShowDialog();
+            this.Visible = true;
         }
     }
 }

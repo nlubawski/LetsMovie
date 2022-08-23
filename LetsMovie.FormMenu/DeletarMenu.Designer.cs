@@ -83,6 +83,7 @@
             this.picMovie.Size = new System.Drawing.Size(221, 177);
             this.picMovie.TabIndex = 10;
             this.picMovie.TabStop = false;
+            this.picMovie.Click += new System.EventHandler(this.picMovie_Click);
             // 
             // picSeries
             // 

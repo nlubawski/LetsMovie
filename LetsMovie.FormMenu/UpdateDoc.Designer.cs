@@ -137,6 +137,7 @@
             this.frmUpdateSerie.Size = new System.Drawing.Size(423, 30);
             this.frmUpdateSerie.TabIndex = 21;
             this.frmUpdateSerie.Text = "ATUALIZAR TÍTULO - DOCUMENTÁRIOS";
+            this.frmUpdateSerie.Click += new System.EventHandler(this.frmUpdateSerie_Click);
             // 
             // frmUpdateDoc
             // 
@@ -155,6 +156,7 @@
             this.Controls.Add(this.frmUpdateSerie);
             this.Name = "frmUpdateDoc";
             this.Text = "UpdateDoc";
+            this.Load += new System.EventHandler(this.frmUpdateDoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

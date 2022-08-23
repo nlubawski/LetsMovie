@@ -40,5 +40,13 @@ namespace LetsMovie.FormMenu
             menuInicial.ShowDialog();
             this.Visible = true;
         }
+
+        private void picMovie_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmDeleteMovies deleteFilme = new frmDeleteMovies();
+            deleteFilme.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
