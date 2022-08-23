@@ -34,8 +34,9 @@ namespace LetsMovie.FormMenu
             {
                 if (Application.OpenForms[intIndex] != this)
                     Application.OpenForms[intIndex].Close();
+                else
+                    Application.Exit();
             }
-
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
