@@ -78,7 +78,7 @@
             this.picMovie.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picMovie.ErrorImage")));
             this.picMovie.Image = ((System.Drawing.Image)(resources.GetObject("picMovie.Image")));
             this.picMovie.InitialImage = ((System.Drawing.Image)(resources.GetObject("picMovie.InitialImage")));
-            this.picMovie.Location = new System.Drawing.Point(35, 125);
+            this.picMovie.Location = new System.Drawing.Point(34, 118);
             this.picMovie.Name = "picMovie";
             this.picMovie.Size = new System.Drawing.Size(221, 177);
             this.picMovie.TabIndex = 10;
@@ -87,7 +87,7 @@
             // picSeries
             // 
             this.picSeries.Image = ((System.Drawing.Image)(resources.GetObject("picSeries.Image")));
-            this.picSeries.Location = new System.Drawing.Point(299, 205);
+            this.picSeries.Location = new System.Drawing.Point(298, 198);
             this.picSeries.Name = "picSeries";
             this.picSeries.Size = new System.Drawing.Size(212, 177);
             this.picSeries.TabIndex = 11;
@@ -96,7 +96,7 @@
             // picDoc
             // 
             this.picDoc.Image = ((System.Drawing.Image)(resources.GetObject("picDoc.Image")));
-            this.picDoc.Location = new System.Drawing.Point(548, 125);
+            this.picDoc.Location = new System.Drawing.Point(547, 118);
             this.picDoc.Name = "picDoc";
             this.picDoc.Size = new System.Drawing.Size(221, 177);
             this.picDoc.TabIndex = 12;
@@ -106,7 +106,7 @@
             // 
             this.labSeries.AutoSize = true;
             this.labSeries.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labSeries.Location = new System.Drawing.Point(362, 170);
+            this.labSeries.Location = new System.Drawing.Point(361, 163);
             this.labSeries.Name = "labSeries";
             this.labSeries.Size = new System.Drawing.Size(82, 30);
             this.labSeries.TabIndex = 13;
@@ -116,7 +116,7 @@
             // 
             this.labFilmes.AutoSize = true;
             this.labFilmes.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labFilmes.Location = new System.Drawing.Point(95, 305);
+            this.labFilmes.Location = new System.Drawing.Point(94, 298);
             this.labFilmes.Name = "labFilmes";
             this.labFilmes.Size = new System.Drawing.Size(87, 30);
             this.labFilmes.TabIndex = 14;
@@ -126,7 +126,7 @@
             // 
             this.labDoc.AutoSize = true;
             this.labDoc.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labDoc.Location = new System.Drawing.Point(554, 305);
+            this.labDoc.Location = new System.Drawing.Point(553, 298);
             this.labDoc.Name = "labDoc";
             this.labDoc.Size = new System.Drawing.Size(203, 30);
             this.labDoc.TabIndex = 15;

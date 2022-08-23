@@ -111,6 +111,7 @@
             this.picDoc.Size = new System.Drawing.Size(221, 177);
             this.picDoc.TabIndex = 18;
             this.picDoc.TabStop = false;
+            this.picDoc.Click += new System.EventHandler(this.picDoc_Click);
             // 
             // picSeries
             // 
@@ -120,6 +121,7 @@
             this.picSeries.Size = new System.Drawing.Size(212, 177);
             this.picSeries.TabIndex = 17;
             this.picSeries.TabStop = false;
+            this.picSeries.Click += new System.EventHandler(this.picSeries_Click);
             // 
             // picMovie
             // 

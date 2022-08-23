@@ -10,31 +10,11 @@ using System.Windows.Forms;
 
 namespace LetsMovie.FormMenu
 {
-    public partial class frmUpdateMovie : Form
+    public partial class frmUpdateDoc : Form
     {
-        public frmUpdateMovie()
+        public frmUpdateDoc()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labUpdTitulo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmUpdateMovie_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

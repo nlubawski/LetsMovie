@@ -53,5 +53,21 @@ namespace LetsMovie.FormMenu
             atualizarFilme.ShowDialog();
             this.Visible = true;
         }
+
+        private void picSeries_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            UpdateSerie atualizarSerie = new UpdateSerie();
+            atualizarSerie.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void picDoc_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmUpdateDoc atualizarDoc = new frmUpdateDoc();
+            atualizarDoc.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
