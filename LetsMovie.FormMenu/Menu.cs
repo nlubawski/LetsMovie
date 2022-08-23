@@ -30,8 +30,11 @@ namespace LetsMovie.FormMenu
         }
         private void btnSair_Click(object sender, EventArgs e)
         {
-
-            Application.Exit();
+            for (int intIndex = Application.OpenForms.Count - 1; intIndex >= 0; intIndex--)
+            {
+                if (Application.OpenForms[intIndex] != this)
+                    Application.OpenForms[intIndex].Close();
+            }
 
         }
 
