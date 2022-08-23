@@ -33,8 +33,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.btnSobre = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.btnTelaInicial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -43,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(62, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 45);
+            this.label1.Size = new System.Drawing.Size(397, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -79,23 +78,15 @@
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "https://github.com/mosilva";
             // 
-            // btnSair
+            // btnVoltar
             // 
-            this.btnSair.Location = new System.Drawing.Point(652, 28);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 6;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            // 
-            // btnSobre
-            // 
-            this.btnSobre.Location = new System.Drawing.Point(338, 28);
-            this.btnSobre.Name = "btnSobre";
-            this.btnSobre.Size = new System.Drawing.Size(75, 23);
-            this.btnSobre.TabIndex = 5;
-            this.btnSobre.Text = "Sobre";
-            this.btnSobre.UseVisualStyleBackColor = true;
+            this.btnVoltar.Location = new System.Drawing.Point(652, 28);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.TabIndex = 6;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnTelaInicial
             // 
@@ -105,14 +96,14 @@
             this.btnTelaInicial.TabIndex = 4;
             this.btnTelaInicial.Text = "Tela Inicial";
             this.btnTelaInicial.UseVisualStyleBackColor = true;
+            this.btnTelaInicial.Click += new System.EventHandler(this.btnTelaInicial_Click);
             // 
             // frmSobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.btnSobre);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnTelaInicial);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
@@ -133,8 +124,7 @@
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
         private LinkLabel linkLabel3;
-        private Button btnSair;
-        private Button btnSobre;
+        private Button btnVoltar;
         private Button btnTelaInicial;
     }
 }

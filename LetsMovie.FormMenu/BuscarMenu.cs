@@ -24,5 +24,21 @@ namespace LetsMovie.FormMenu
             menu.ShowDialog();
             this.Visible = true;
         }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmSobre sobre = new frmSobre();
+            sobre.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmMenu menuInicial = new frmMenu();
+            menuInicial.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

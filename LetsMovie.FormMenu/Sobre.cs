@@ -21,5 +21,21 @@ namespace LetsMovie.FormMenu
         {
 
         }
+
+        private void btnTelaInicial_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmMenu menuInicial = new frmMenu();
+            menuInicial.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmMenu menuInicial = new frmMenu();
+            menuInicial.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

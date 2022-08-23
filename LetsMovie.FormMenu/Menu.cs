@@ -51,14 +51,17 @@ namespace LetsMovie.FormMenu
         private void btnSobre_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            frmSobre cadastrar = new frmSobre();
-            cadastrar.ShowDialog();
+            frmSobre sobre = new frmSobre();
+            sobre.ShowDialog();
             this.Visible = true;
         }
 
         private void btnTelaInicial_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            frmMenu menuInicial = new frmMenu();
+            menuInicial.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

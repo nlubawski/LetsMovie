@@ -57,9 +57,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>O projeto - foi desenvolvido em parceira entre Marcelo, Nathan e Thayssa.
-Faz o recorte de um streaming com foco no objeto principal do negócio:
-os vídeos (subdividido em filmes, séries e documentários). </value>
-  </data>
 </root>
