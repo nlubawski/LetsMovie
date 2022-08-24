@@ -87,9 +87,10 @@ namespace LetsMovie.FormMenu
         private void btnDeletar_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            frmDeletar deletar = new frmDeletar();
+            frmDeletarMenu deletar = new frmDeletarMenu();
             deletar.ShowDialog();
             this.Visible = true;
+            
         }
     }
 }

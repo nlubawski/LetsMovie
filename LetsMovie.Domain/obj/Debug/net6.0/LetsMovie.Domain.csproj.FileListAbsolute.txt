@@ -1,0 +1,12 @@
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\bin\Debug\net6.0\LetsMovie.Domain.deps.json
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\bin\Debug\net6.0\LetsMovie.Domain.dll
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\bin\Debug\net6.0\LetsMovie.Domain.pdb
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\LetsMovie.Domain.csproj.AssemblyReference.cache
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\LetsMovie.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\LetsMovie.Domain.AssemblyInfoInputs.cache
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\LetsMovie.Domain.AssemblyInfo.cs
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\LetsMovie.Domain.csproj.CoreCompileInputs.cache
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\LetsMovie.Domain.dll
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\refint\LetsMovie.Domain.dll
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\LetsMovie.Domain.pdb
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Domain\obj\Debug\net6.0\ref\LetsMovie.Domain.dll

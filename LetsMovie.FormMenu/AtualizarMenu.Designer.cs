@@ -31,15 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAtualizar));
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnSobre = new System.Windows.Forms.Button();
-            this.btnTelaInicial = new System.Windows.Forms.Button();
-            this.labDoc = new System.Windows.Forms.Label();
             this.labFilmes = new System.Windows.Forms.Label();
-            this.labSeries = new System.Windows.Forms.Label();
-            this.picDoc = new System.Windows.Forms.PictureBox();
-            this.picSeries = new System.Windows.Forms.PictureBox();
             this.picMovie = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picDoc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSeries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMovie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,26 +56,6 @@
             this.btnSobre.UseVisualStyleBackColor = true;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
-            // btnTelaInicial
-            // 
-            this.btnTelaInicial.Location = new System.Drawing.Point(60, 33);
-            this.btnTelaInicial.Name = "btnTelaInicial";
-            this.btnTelaInicial.Size = new System.Drawing.Size(75, 23);
-            this.btnTelaInicial.TabIndex = 7;
-            this.btnTelaInicial.Text = "Tela Inicial";
-            this.btnTelaInicial.UseVisualStyleBackColor = true;
-            this.btnTelaInicial.Click += new System.EventHandler(this.btnTelaInicial_Click);
-            // 
-            // labDoc
-            // 
-            this.labDoc.AutoSize = true;
-            this.labDoc.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labDoc.Location = new System.Drawing.Point(552, 291);
-            this.labDoc.Name = "labDoc";
-            this.labDoc.Size = new System.Drawing.Size(203, 30);
-            this.labDoc.TabIndex = 21;
-            this.labDoc.Text = "DOCUMENTÁRIOS";
-            // 
             // labFilmes
             // 
             this.labFilmes.AutoSize = true;
@@ -92,36 +65,6 @@
             this.labFilmes.Size = new System.Drawing.Size(87, 30);
             this.labFilmes.TabIndex = 20;
             this.labFilmes.Text = "FILMES";
-            // 
-            // labSeries
-            // 
-            this.labSeries.AutoSize = true;
-            this.labSeries.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labSeries.Location = new System.Drawing.Point(360, 156);
-            this.labSeries.Name = "labSeries";
-            this.labSeries.Size = new System.Drawing.Size(82, 30);
-            this.labSeries.TabIndex = 19;
-            this.labSeries.Text = "SÉRIES";
-            // 
-            // picDoc
-            // 
-            this.picDoc.Image = ((System.Drawing.Image)(resources.GetObject("picDoc.Image")));
-            this.picDoc.Location = new System.Drawing.Point(546, 112);
-            this.picDoc.Name = "picDoc";
-            this.picDoc.Size = new System.Drawing.Size(221, 177);
-            this.picDoc.TabIndex = 18;
-            this.picDoc.TabStop = false;
-            this.picDoc.Click += new System.EventHandler(this.picDoc_Click);
-            // 
-            // picSeries
-            // 
-            this.picSeries.Image = ((System.Drawing.Image)(resources.GetObject("picSeries.Image")));
-            this.picSeries.Location = new System.Drawing.Point(297, 191);
-            this.picSeries.Name = "picSeries";
-            this.picSeries.Size = new System.Drawing.Size(212, 177);
-            this.picSeries.TabIndex = 17;
-            this.picSeries.TabStop = false;
-            this.picSeries.Click += new System.EventHandler(this.picSeries_Click);
             // 
             // picMovie
             // 
@@ -140,21 +83,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labDoc);
             this.Controls.Add(this.labFilmes);
-            this.Controls.Add(this.labSeries);
-            this.Controls.Add(this.picDoc);
-            this.Controls.Add(this.picSeries);
             this.Controls.Add(this.picMovie);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnSobre);
-            this.Controls.Add(this.btnTelaInicial);
             this.Name = "frmAtualizar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Atualizar";
             this.Load += new System.EventHandler(this.frmAtualizar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picDoc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSeries)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMovie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,12 +101,7 @@
 
         private Button btnVoltar;
         private Button btnSobre;
-        private Button btnTelaInicial;
-        private Label labDoc;
         private Label labFilmes;
-        private Label labSeries;
-        private PictureBox picDoc;
-        private PictureBox picSeries;
         private PictureBox picMovie;
     }
 }

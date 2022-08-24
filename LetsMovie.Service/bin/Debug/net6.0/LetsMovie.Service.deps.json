@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "LetsMovie.Service/1.0.0": {
+        "dependencies": {
+          "LetsMovie.Documents": "1.0.0"
+        },
+        "runtime": {
+          "LetsMovie.Service.dll": {}
+        }
+      },
+      "LetsMovie.Documents/1.0.0": {
+        "runtime": {
+          "LetsMovie.Documents.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LetsMovie.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LetsMovie.Documents/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

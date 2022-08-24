@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\LetsMovie.Infra",
+    "\\LetsMovie.Presentation",
+    "\\LetsMovie.Presentation\\Interface",
+    "\\LetsMovie.Presentation\\ProgramFlow"
+  ],
+  "SelectedNode": "\\LetsMovie.Infra\\UpdateMovie.cs",
+  "PreviewInSolutionExplorer": false
+}

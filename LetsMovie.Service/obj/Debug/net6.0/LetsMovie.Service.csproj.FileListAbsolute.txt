@@ -1,0 +1,15 @@
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\bin\Debug\net6.0\LetsMovie.Service.deps.json
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\bin\Debug\net6.0\LetsMovie.Service.dll
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\bin\Debug\net6.0\LetsMovie.Service.pdb
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\bin\Debug\net6.0\LetsMovie.Documents.dll
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\bin\Debug\net6.0\LetsMovie.Documents.pdb
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.csproj.AssemblyReference.cache
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.AssemblyInfoInputs.cache
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.AssemblyInfo.cs
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.csproj.CoreCompileInputs.cache
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.csproj.CopyComplete
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.dll
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\refint\LetsMovie.Service.dll
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\LetsMovie.Service.pdb
+C:\Users\thays\source\repos\LetsMovie\LetsMovie.Service\obj\Debug\net6.0\ref\LetsMovie.Service.dll
